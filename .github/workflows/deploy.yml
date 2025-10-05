@@ -37,9 +37,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - uses: ./.github/actions/setup
-   
-    - uses: ./.github/actions/build-and-validate
+    - name: Setup Node.js and Install Dependencies
+      uses: ./.github/actions/setup
+
+    - name: Build and Validate
+      uses: ./.github/actions/build-and-validate
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v4
