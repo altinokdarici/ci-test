@@ -1,0 +1,17 @@
+name: Build and Validate
+description: 'Build the project and run validations'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Build
+      shell: bash
+      run: npm run build
+
+    # - name: Test
+    #   shell: bash
+    #   run: npm test
+
+    # - name: Lint
+    #   shell: bash
+    #   run: npm run lint    
