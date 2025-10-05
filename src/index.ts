@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express';
 
+// Create a new express application instance
 const app = express();
 const port = process.env.PORT || 3000;
 
